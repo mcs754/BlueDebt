@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="PrincipalBlueDebt">
+  <ClassDiagramComponents>
+    <Class name="Conexao" package="principalbluedebt" visibility="public" xPosition="65.0" yPosition="20.0">
+      <Fields>
+        <Field name="con" type="Connection" visibility="private" isStatic="true"/>
+        <Field name="instancia" type="Conexao" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="private"/>
+      </Constructors>
+      <Methods>
+        <Method name="getInstance" returnType="Conexao" visibility="public" isStatic="true"/>
+        <Method name="getConnection" returnType="Connection" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EntradaRecurso" package="principalbluedebt" visibility="public" xPosition="296.0" yPosition="20.0">
+      <Fields>
+        <Field name="valorRecEnt" type="float" visibility="private"/>
+        <Field name="especieRecEnt" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Membro" package="principalbluedebt" visibility="public" xPosition="515.0" yPosition="20.0">
+      <Fields>
+        <Field name="nomeMem" type="String" visibility="private"/>
+        <Field name="cnpjMem" type="double" visibility="private"/>
+        <Field name="cpfMem" type="double" visibility="private"/>
+        <Field name="endMem" type="String" visibility="private"/>
+        <Field name="foneMem" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNomeMem" returnType="String" visibility="public"/>
+        <Method name="setNomeMem" returnType="void" visibility="public">
+          <Argument type="String" name="nomeMem"/>
+        </Method>
+        <Method name="getCnpjMem" returnType="double" visibility="public"/>
+        <Method name="setCnpjMem" returnType="void" visibility="public">
+          <Argument type="double" name="cnpjMem"/>
+        </Method>
+        <Method name="getCpfMem" returnType="double" visibility="public"/>
+        <Method name="setCpfMem" returnType="void" visibility="public">
+          <Argument type="double" name="cpfMem"/>
+        </Method>
+        <Method name="getEndMem" returnType="String" visibility="public"/>
+        <Method name="setEndMem" returnType="void" visibility="public">
+          <Argument type="String" name="endMem"/>
+        </Method>
+        <Method name="getFoneMem" returnType="int" visibility="public"/>
+        <Method name="setFoneMem" returnType="void" visibility="public">
+          <Argument type="int" name="foneMem"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="NovoUsuario" package="principalbluedebt" visibility="public" xPosition="796.0" yPosition="264.0">
+      <Fields>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jlCpf" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jlEmail" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jlEndereco" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jlNome" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jlTelefone" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tfCpf" type="javax.swing.JFormattedTextField" visibility="private"/>
+        <Field name="tfEmail" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tfEndereco" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tfNome" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tfTelefone" type="javax.swing.JFormattedTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PrincipalBlueDebt" package="principalbluedebt" visibility="public" xPosition="809.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SaidaRecurso" package="principalbluedebt" visibility="public" xPosition="1060.0" yPosition="20.0">
+      <Fields>
+        <Field name="valorRecSai" type="float" visibility="private"/>
+        <Field name="especieRecSai" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getValorRecSai" returnType="float" visibility="public"/>
+        <Method name="setValorRecSai" returnType="void" visibility="public">
+          <Argument type="float" name="valorRecSai"/>
+        </Method>
+        <Method name="getEspecieRecSai" returnType="String" visibility="public"/>
+        <Method name="setEspecieRecSai" returnType="void" visibility="public">
+          <Argument type="String" name="especieRecSai"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TelaPrincipal" package="principalbluedebt" visibility="public" xPosition="20.0" yPosition="965.0">
+      <Fields>
+        <Field name="dpTelaPrincipal" type="javax.swing.JDesktopPane" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jMenu2" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenuBar1" type="javax.swing.JMenuBar" visibility="private"/>
+        <Field name="jmGerenciarUsuario" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jmNovoUsuario" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jmUsuario" type="javax.swing.JMenu" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jmNovoUsuarioActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jmGerenciarUsuarioActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TesteView" package="principalbluedebt" visibility="public" xPosition="796.0" yPosition="689.0">
+      <Fields>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTable1" type="javax.swing.JTable" visibility="private"/>
+        <Field name="jbPesquisar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="tfLeitura" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jbPesquisarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="UsuarioDao" package="principalbluedebt" visibility="public" xPosition="20.0" yPosition="474.0">
+      <Fields>
+        <Field name="cs" type="Conexao" visibility="private"/>
+        <Field name="con" type="Connection" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="inserir" returnType="void" visibility="public">
+          <Argument type="UsuarioModel" name="u"/>
+        </Method>
+        <Method name="excluir" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="update" returnType="void" visibility="public">
+          <Argument type="UsuarioModel" name="u"/>
+        </Method>
+        <Method name="relatorio" returnType="ArrayList&lt;UsuarioModel&gt;" visibility="public"/>
+        <Method name="pesquisarNome" returnType="ArrayList&lt;UsuarioModel&gt;" visibility="public">
+          <Argument type="UsuarioModel" name="um"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="UsuarioModel" package="principalbluedebt" visibility="public" xPosition="522.0" yPosition="414.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="nome" type="String" visibility="private"/>
+        <Field name="cpf" type="long" visibility="private"/>
+        <Field name="endereco" type="String" visibility="private"/>
+        <Field name="telefone" type="String" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="gerenciarCadastro" returnType="void" visibility="public"/>
+        <Method name="efetuarLancamento" returnType="void" visibility="public"/>
+        <Method name="alterarLancamento" returnType="void" visibility="public"/>
+        <Method name="emitirRelatorio" returnType="void" visibility="public"/>
+        <Method name="realizarPesquisa" returnType="void" visibility="public"/>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getNome" returnType="String" visibility="public"/>
+        <Method name="setNome" returnType="void" visibility="public">
+          <Argument type="String" name="nome"/>
+        </Method>
+        <Method name="getCpf" returnType="long" visibility="public"/>
+        <Method name="setCpf" returnType="void" visibility="public">
+          <Argument type="long" name="cpf"/>
+        </Method>
+        <Method name="getEndereco" returnType="String" visibility="public"/>
+        <Method name="setEndereco" returnType="void" visibility="public">
+          <Argument type="String" name="endereco"/>
+        </Method>
+        <Method name="getTelefone" returnType="String" visibility="public"/>
+        <Method name="setTelefone" returnType="void" visibility="public">
+          <Argument type="String" name="telefone"/>
+        </Method>
+        <Method name="getEmail" returnType="String" visibility="public"/>
+        <Method name="setEmail" returnType="void" visibility="public">
+          <Argument type="String" name="email"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="instancia" source="principalbluedebt.Conexao" target="principalbluedebt.Conexao" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="principalbluedebt.UsuarioDao" target="principalbluedebt.UsuarioModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="principalbluedebt.Conexao" target="principalbluedebt.Conexao" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cs" source="principalbluedebt.UsuarioDao" target="principalbluedebt.Conexao" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
